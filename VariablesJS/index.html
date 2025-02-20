@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>JS</title>
+    <style>
+    </style>
+  </head>
+
+  <body>
+    <h1>JS</h1>
+    <button id="button_A">押してください</button>
+    <h3 id="heading_A"></h3>
+
+
+    <script>
+        const buttonA = document.querySelector("#button_A");
+        const headingA = document.querySelector("#heading_A");
+
+        let count = 1;
+        count = 100;
+        let dog = { name: "ポチ", breed: "ダルメシアン" };
+
+
+        buttonA.onclick = () => {
+        buttonA.textContent = "もう一度！";
+        headingA.textContent = `${count} 回クリックしました`;
+        count += 1;
+        };
+
+
+
+    </script>
+  </body>
+</html>
