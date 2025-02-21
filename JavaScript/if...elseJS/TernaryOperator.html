@@ -1,0 +1,26 @@
+<label for="theme">テーマを選んでください: </label>
+<select id="theme">
+  <option value="white">白</option>
+  <option value="black">黒</option>
+</select>
+
+<h1>私のウェブサイト</h1>
+
+
+<script>
+    const select = document.querySelector("select");
+const html = document.querySelector("html");
+document.body.style.padding = "10px";
+
+function update(bgColor, textColor) {
+  html.style.backgroundColor = bgColor;
+  html.style.color = textColor;
+}
+
+select.addEventListener("change", () =>
+  select.value === "black"
+    ? update("black", "white")
+    : update("white", "black"),
+);
+
+</script>
